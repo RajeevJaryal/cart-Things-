@@ -1,6 +1,6 @@
 import classes from './CartButton.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { cartShow } from '../reducers/cartSlice';
+import { cartShow } from '../UI/cartVisible';
 
 const CartButton = (props) => {
   const totalItems=useSelector((state)=> state.cart.totalItems);

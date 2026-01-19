@@ -1,0 +1,20 @@
+.notification {
+  position: relative;       /* relative to layout, not fixed */
+  margin-top: 0;            /* appears just below header */
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 0;         /* flat bar */
+  animation: slideDown 0.3s ease-out;
+}
+
+.pending { background: #1769aa; }   /* blue */
+.success { background: #2e7d32; }   /* green */
+.error   { background: #d32f2f; }   /* red */
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}

@@ -10,7 +10,7 @@ const Cart = () => {
     <Card className={classes.cart}>
       <div>
         <h2>Your Shopping Cart</h2>
-        <h2>{totalPrice}</h2>
+        <h2>Total ${totalPrice}</h2>
       </div>
       <ul>
         {cartItems.length === 0 && <p>No items yet..</p>}
